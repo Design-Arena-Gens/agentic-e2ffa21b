@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signature ?lectronique ? Ouabas Hakima</title>
+    <meta name="description" content="G?n?rez et t?l?chargez la signature ?lectronique de Ouabas Hakima en PNG." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Sacramento&family=Allura&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Signature ?lectronique</h1>
+        <p class="subtitle">Nom cibl?: <strong>Ouabas Hakima</strong></p>
+      </header>
+
+      <section class="controls">
+        <div class="field">
+          <label for="nameInput">Nom</label>
+          <input id="nameInput" type="text" value="Ouabas Hakima" />
+        </div>
+        <div class="field">
+          <label for="fontSelect">Style d??criture</label>
+          <select id="fontSelect">
+            <option value="'Great Vibes', cursive">Great Vibes</option>
+            <option value="'Parisienne', cursive">Parisienne</option>
+            <option value="'Sacramento', cursive">Sacramento</option>
+            <option value="'Allura', cursive">Allura</option>
+          </select>
+        </div>
+        <div class="field slider">
+          <label for="thicknessRange">?paisseur du trait</label>
+          <input id="thicknessRange" type="range" min="1" max="8" value="3" />
+        </div>
+        <div class="actions">
+          <button id="downloadPngBtn" class="btn primary">T?l?charger (PNG)</button>
+        </div>
+      </section>
+
+      <section class="preview">
+        <div class="canvas-wrapper">
+          <canvas id="signatureCanvas" width="1200" height="400"></canvas>
+        </div>
+        <p class="hint">Astuces: changez le style et l??paisseur, puis t?l?chargez en PNG (fond transparent).</p>
+      </section>
+
+      <footer class="footer">
+        <small>G?n?r? localement dans votre navigateur. Aucune donn?e n?est envoy?e.</small>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
